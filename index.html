@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>ХоббиАрт (form)</title>
+</head>
+<body>
+    <section class="cart">
+        <div class="cart-wrapper">
+            <div class="cart-container">
+                <form class="cart-form">
+                    <div class="cart-form-block">
+                        <p class="cart-form__form-title">
+                            Способ получения
+                        </p>
+                        <div class="cart-form-row">
+                            <div class="cart-form__form-item">
+                                <label for="userCity"></label>
+                                <input type="text" name="userCity" placeholder="Город" id="userCity" required>
+                            </div>
+                        </div>
+                        <div class="cart-form-row">
+                            <div class="cart-form__form-item">
+                                <select name="userPost" id="userPost">
+                                    <option value="post-1" selected>Белпочта</option>
+                                    <option value="post-2">Европочта</option>
+                                    <option value="post-3">СДЭК</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cart-form-row">
+                            <div class="cart-form__form-item cart-form__form-item_l">
+                                <label for="userStr"></label>
+                                <input type="text" name="userStr" placeholder="Улица" id="userStr" required>
+                            </div>
+                            <div class="cart-form__form-item cart-form__form-item_s">
+                                <label for="userHouse"></label>
+                                <input type="text" name="userHouse" placeholder="Дом" id="userHouse" required>
+                            </div>
+                            <div class="cart-form__form-item cart-form__form-item_s">
+                                <label for="userAp"></label>
+                                <input type="text" name="userAp" placeholder="Квартира" id="userAp" required>
+                            </div>
+                            <div class="cart-form__form-item cart-form__form-item_s">
+                                <label for="userPostcode"></label>
+                                <input type="text" name="userPostcode" placeholder="Индекс" id="userPostcode" required>
+                            </div>
+                        </div>
+                        <div class="cart-form-row">
+                            <div class="cart-form__form-item">
+                                <textarea placeholder="Добавить комментарий" id="userComment"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-form-block">
+                        <p class="cart-form__form-title">
+                            Данные получателя
+                        </p>
+                        <div class="cart-form-row">
+                            <div class="cart-form__form-item .cart-form__form-item_m">
+                                <label for="userLName"></label>
+                                <input type="text" name="userLName" placeholder="Фамилия" id="userLName" required>
+                            </div>
+                            <div class="cart-form__form-item .cart-form__form-item_m">
+                                <label for="userName"></label>
+                                <input type="text" name="userName" placeholder="Имя" id="userName" required>
+                            </div>
+                            <div class="cart-form__form-item .cart-form__form-item_m">
+                                <label for="userSName"></label>
+                                <input type="text" name="userSName" placeholder="Отчество" id="userSName">
+                            </div>
+                        </div>
+                        <div class="cart-form-row">
+                            <div class="cart-form__form-item">  
+                                <input type="tel" name="userTel" placeholder="Номер телефона" id="userTel" required>
+                                <br>
+                                <label for="userTel">По этому номеру телефона мы свяжемся с вами для подтверждения заказа</label>
+                            </div>
+                        </div>
+    
+                        <div class="cart-form__form-item cart-form__form-item_bottom">  
+                            <input type="email" name="userEmail" placeholder="E-mail" id="userEmail" required>
+                            <br>
+                            <label for="userEmail">На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания</label>
+                        </div>
+                        <div class="cart-form__form-check">  
+                            <input type="checkbox" class="cart-checkbox" name="userNews" id="userNews">
+                            <label class="cart-checkbox-label" for="userNews">Подписаться на рассылку новинок и акций</label>
+                        </div>
+                    </div>
+
+                    <div class="cart-form-block">
+                        <p class="cart-form__form-title">
+                            Способ оплаты
+                        </p>
+                        <div class="cart-form__form-radio">  
+                            <input type="radio" class="cart-radio" name="userPay" id="userPayCash">
+                            <label class="cart-radio-label" for="userPayCash">Оплата при получении наличными или картой</label>
+                        </div>
+                        <div class="cart-form__form-radio">  
+                            <input type="radio" class="cart-radio" name="userPay" id="userPayOnline">
+                            <label class="cart-radio-label" for="userPayOnline">Оплата банковской картой онлайн</label>
+                        </div>
+                    </div>
+
+                    <div class="cart-form-block">
+                        <div class="cart-form__form-btn">
+                            <label for="submitCart"></label>
+                            <button type="submit" id="submitCart">ОФОРМИТЬ ЗАКАЗ</button>
+                        </div>
+                    </div>
+                    
+
+
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+</html>
